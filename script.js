@@ -237,17 +237,38 @@ exchangeButtonEl.addEventListener("click", () => {
 });
 
 getExchangeRatesEl.addEventListener("click", async () => {
-  exchangeResEl.innerHTML = "";
+  exchangeResEl.innerHTML = ""; // Clear previous results
   const value = baseCurrEl.value;
   const data = await fetchData();
   const baseValue = data[value];
-  exchangeResEl.innerHTML = "";
+
+  const resultTable = document.createElement("table");
+  resultTable.classList.add("exchange-table");
+
+  // Add table header
+  const headerRow = document.createElement("tr");
+  const headerCurrency = document.createElement("th");
+  headerCurrency.textContent = "Currency";
+  const headerRate = document.createElement("th");
+  headerRate.textContent = "Exchange Rate";
+  headerRow.appendChild(headerCurrency);
+  headerRow.appendChild(headerRate);
+  resultTable.appendChild(headerRow);
+
+  // Add rows for each currency
   Object.keys(data).forEach((key) => {
     const conValue = data[key] / baseValue;
-    const temp = document.createTextNode(`${key} : ${conValue.toFixed(4)}`);
-    exchangeResEl.appendChild(temp);
-    exchangeResEl.appendChild(document.createElement("br"));
+    const row = document.createElement("tr");
+    const currencyCell = document.createElement("td");
+    currencyCell.textContent = `${key} - ${currencyCodes[key]}`;
+    const rateCell = document.createElement("td");
+    rateCell.textContent = conValue.toFixed(4);
+    row.appendChild(currencyCell);
+    row.appendChild(rateCell);
+    resultTable.appendChild(row);
   });
+
+  exchangeResEl.appendChild(resultTable);
 });
 
 button.addEventListener("click", async () => {
