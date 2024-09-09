@@ -214,3 +214,29 @@ select:focus {
 select::-ms-expand {
   display: none; /* Removes arrow in IE */
 }
+
+.exchange-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.exchange-table th,
+.exchange-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.exchange-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.exchange-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.exchange-table tr:hover {
+  background-color: #f1f1f1;
+}
