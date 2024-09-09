@@ -1,3 +1,4 @@
+//Code of each and Every Country from the API
 const currencyCodes = {
   USD: "Dollar",
   AED: "Dirham",
@@ -205,6 +206,7 @@ const getExchangeRatesEl = document.getElementById("getExchangeRates");
 const exchangeResultDivEl = document.getElementById("exchangeResultDiv");
 const exchangeResEl = document.getElementById("exchangeRes");
 
+//fetching Real-Time Data from API using Axion
 const url =
   "https://v6.exchangerate-api.com/v6/3939b40eeff1f58d34bbd92f/latest/USD";
 const fetchData = async () => {
@@ -217,6 +219,7 @@ const fetchData = async () => {
   }
 };
 
+//Checking if Amount is Null or Not a Number
 amountInput.addEventListener("blur", () => {
   const value = amountInput.value;
   if (isNaN(value) || value === "") {
@@ -226,16 +229,19 @@ amountInput.addEventListener("blur", () => {
   }
 });
 
+//Exposing Conversion div
 convertButtonEl.addEventListener("click", () => {
   convertMainDiv.style.display = "block";
   exchangeRateDiv.style.display = "none";
 });
 
+//Exposing Exchange Rates div
 exchangeButtonEl.addEventListener("click", () => {
   exchangeRateDiv.style.display = "block";
   convertMainDiv.style.display = "none";
 });
 
+//Creating table for the output
 getExchangeRatesEl.addEventListener("click", async () => {
   exchangeResEl.innerHTML = ""; // Clear previous results
   const value = baseCurrEl.value;
@@ -270,6 +276,7 @@ getExchangeRatesEl.addEventListener("click", async () => {
 
   exchangeResEl.appendChild(resultTable);
 });
+
 
 button.addEventListener("click", async () => {
   const amountToConvert = amountInput.value;
