@@ -1,7 +1,7 @@
 # CurrencyExchange
 🚀 **Currency Converter & Exchange Rate Checker** 💸
 
-Welcome to the **Ultimate Currency Converter & Exchange Rate Checker** project! 🌍💱 This app helps you seamlessly convert between 100+ currencies in real-time, using up-to-date exchange rates! ⚡
+Welcome to the **Ultimate Currency Converter & Exchange Rate Checker** project! 🌍💱 This app helps you seamlessly convert between 100+ currencies in Real-Time, using up-to-date exchange rates! ⚡
 
 ### Features:
 ✨ **Instant Currency Conversion** — Convert between different currencies with ease!  
