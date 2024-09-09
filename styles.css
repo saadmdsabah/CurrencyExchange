@@ -1,24 +1,23 @@
 /* General Styles */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f4f8; /* Soft light blue background */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden;
 }
 
 #Title {
-  text-align: center; /* Center the text */
-  font-size: 2.5rem; /* Adjust font size as needed */
+  text-align: center;
+  font-size: 2.5rem;
   margin-top: 20px;
   margin-bottom: 0;
 }
 
-
 /* Container for layout */
 .container {
   width: 100%;
-  max-width: 1200px; /* Maximum width for larger screens */
+  max-width: 1200px;
   margin: 0 auto;
   padding: 30px;
   display: flex;
@@ -27,95 +26,99 @@ body {
 }
 
 /* Header Styling */
-h1, h2, h3 {
-  color: #2c3e50; /* Dark blue-gray color for headers */
-  margin: 0 0 1rem 0; /* Bottom margin added for spacing */
+h1,
+h2,
+h3 {
+  color: #2c3e50;
+  margin: 0 0 1rem 0;
 }
 
 /* Button Styling */
 button {
-  border-radius: .375rem;
+  border-radius: 0.375rem;
   font-weight: bold;
-  padding: .75rem 1.25rem; /* Increased padding for better click area */
+  padding: 0.75rem 1.25rem;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
-  margin: 0.5rem; /* Added margin between buttons */
+  margin: 0.5rem;
 }
 
 /* Primary Button */
 button.btn-primary {
-  background-color: #3498db; /* Sky blue color */
+  background-color: #3498db;
   color: #ffffff;
 }
 
 button.btn-primary:hover {
-  background-color: #2980b9; /* Darker blue on hover */
+  background-color: #2980b9;
   transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3); /* Blue shadow on hover */
+  box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
 }
 
 /* Secondary Button */
 button.btn-secondary {
-  background-color: #95a5a6; /* Light gray color */
+  background-color: #95a5a6;
   color: #ffffff;
 }
 
 button.btn-secondary:hover {
-  background-color: #7f8c8d; /* Darker gray on hover */
+  background-color: #7f8c8d;
   transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(149, 165, 166, 0.3); /* Gray shadow on hover */
+  box-shadow: 0 4px 8px rgba(149, 165, 166, 0.3);
 }
 
 /* Success Button */
 button.btn-success {
-  background-color: #27ae60; /* Fresh green color */
+  background-color: #27ae60;
   color: #ffffff;
 }
 
 button.btn-success:hover {
-  background-color: #1e8449; /* Darker green on hover */
+  background-color: #1e8449;
   transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(39, 174, 96, 0.3); /* Green shadow on hover */
+  box-shadow: 0 4px 8px rgba(39, 174, 96, 0.3);
 }
 
 /* Info Button */
 button.btn-info {
-  background-color: #1abc9c; /* Vibrant teal color */
+  background-color: #1abc9c;
   color: #ffffff;
 }
 
 button.btn-info:hover {
-  background-color: #16a085; /* Darker teal on hover */
+  background-color: #16a085;
   transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(26, 188, 156, 0.3); /* Teal shadow on hover */
+  box-shadow: 0 4px 8px rgba(26, 188, 156, 0.3);
 }
 
 /* Form Elements */
-input[type="number"], input[type="text"] {
-  border-radius: .375rem;
-  border: 1px solid #bdc3c7; /* Light gray border */
-  padding: .75rem 1rem;
+input[type="number"],
+input[type="text"] {
+  border-radius: 0.375rem;
+  border: 1px solid #bdc3c7;
+  padding: 0.75rem 1rem;
   font-size: 1rem;
   line-height: 1.5;
   width: 100%;
-  max-width: 400px; /* Maximum width for input fields */
-  margin-bottom: 1rem; /* Space below each input field */
+  max-width: 400px;
+  margin-bottom: 1rem;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-input[type="number"]:focus, input[type="text"]:focus {
-  border-color: #3498db; /* Sky blue border on focus */
+input[type="number"]:focus,
+input[type="text"]:focus {
+  border-color: #3498db;
   outline: none;
-  box-shadow: 0 0 0 .2rem rgba(52, 152, 219, 0.25); /* Sky blue shadow on focus */
+  box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
 }
 
 /* Label Styling */
 label {
   font-weight: 600;
-  color: #34495e; /* Slightly lighter dark blue color */
-  margin-bottom: .5rem;
+  color: #34495e;
+  margin-bottom: 0.5rem;
   display: block;
 }
 
@@ -126,31 +129,32 @@ label {
 }
 
 /* Div Container Styling */
-#converterMainDiv, #exchangeRatedDiv {
-  border: 1px solid #d1d5db; /* Light gray border */
-  border-radius: .375rem;
+#converterMainDiv,
+#exchangeRatedDiv {
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
   padding: 2rem;
-  background-color: #ffffff; /* White background */
+  background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2rem; /* Increased bottom margin for spacing */
+  margin-bottom: 2rem;
   width: 100%;
-  max-width: 100%; /* Ensure divs do not exceed the viewport width */
+  max-width: 100%;
   box-sizing: border-box;
-  overflow: hidden; /* Prevent internal scrolling */
+  overflow: hidden;
 }
 
 /* Result Display Styling */
 #exchangeResultDiv h2 {
   font-size: 1.75rem;
-  color: #2c3e50; /* Dark blue-gray color */
+  color: #2c3e50;
   margin-top: 0;
   font-weight: 600;
-  padding: 0.5rem 0; /* Padding added for spacing */
+  padding: 0.5rem 0;
 }
 
 /* Error Highlighting */
 .redBorder {
-  border-color: #e74c3c !important; /* Danger red color for errors */
+  border-color: #e74c3c !important;
 }
 
 /* Hide Elements Initially */
@@ -165,15 +169,16 @@ label {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .container {
-    padding: 15px; /* Adjusted padding for smaller screens */
+    padding: 15px;
   }
-  
+
   button {
     margin: 0.5rem;
-    padding: .5rem 1rem; /* Adjusted padding for smaller buttons */
+    padding: 0.5rem 1rem;
   }
-  
-  #converterMainDiv, #exchangeRatedDiv {
+
+  #converterMainDiv,
+  #exchangeRatedDiv {
     width: 100%;
     padding: 1rem;
   }
@@ -187,18 +192,18 @@ label {
 
 /* Select Element Styling */
 select {
-  border-radius: .375rem;
-  border: 1px solid #bdc3c7; /* Light gray border */
-  padding: .75rem 1rem;
+  border-radius: 0.375rem;
+  border: 1px solid #bdc3c7;
+  padding: 0.75rem 1rem;
   font-size: 1rem;
   line-height: 1.5;
   width: 100%;
-  max-width: 433px; /* Maximum width for select elements */
-  margin-bottom: 1rem; /* Space below each select field */
+  max-width: 433px;
+  margin-bottom: 1rem;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
   transition: border-color 0.3s, box-shadow 0.3s;
-  appearance: none; /* Removes default dropdown arrow */
-  background-image: url('data:image/svg+xml;base64,YOUR_BASE64_ARROW_ICON'); /* Custom arrow */
+  appearance: none;
+  background-image: url("data:image/svg+xml;base64,YOUR_BASE64_ARROW_ICON");
   background-position: right 10px center;
   background-repeat: no-repeat;
   background-color: #ffffff;
@@ -207,14 +212,15 @@ select {
 select:focus {
   border-color: #3498db; /* Sky blue border on focus */
   outline: none;
-  box-shadow: 0 0 0 .2rem rgba(52, 152, 219, 0.25); /* Sky blue shadow on focus */
+  box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
 }
 
 /* For Select Dropdown Arrow (Optional Custom Styling) */
 select::-ms-expand {
-  display: none; /* Removes arrow in IE */
+  display: none;
 }
 
+/* Adding styling to the table */
 .exchange-table {
   width: 100%;
   border-collapse: collapse;
