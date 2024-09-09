@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"
+    integrity="sha512-emSwuKiMyYedRwflbZB2ghzX8Cw8fmNVgZ6yQNNXXagFzFOaQmbvQ1vmDkddHjm5AITcBIZfC7k4ShQSjgPAmQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <title>Currency Converter</title>
+</head>
+<body>
+  <h1 id="Title">Currency Conversion</h1>
+  <div class="container">
+    <button id="convertButton" class="btn-primary">Convert</button>
+    <button id="exchangeRateButton" class="btn-secondary">Exchange Rates</button>
+
+    <div id="converterMainDiv">
+      <div>
+        <label for="amount">Amount</label>
+        <input id="amount" type="number" />
+
+        <label for="from">From</label>
+        <select id="from">
+          <!-- Options will be populated by JavaScript -->
+        </select>
+
+        <label for="to">To</label>
+        <select id="to">
+          <!-- Options will be populated by JavaScript -->
+        </select>
+        <br />
+        <button id="submitButton" class="btn-success" type="submit">Submit</button>
+        <div id="exchangeResultDiv"></div>
+      </div>
+    </div>
+
+    <div id="exchangeRatedDiv">
+      <label for="baseCurr">Base Currency</label>
+      <select id="baseCurr">
+        <!-- Options will be populated by JavaScript -->
+      </select>
+      <br />
+      <button id="getExchangeRates" class="btn-info" type="submit">Get Exchange Rates</button>
+      <div id="exchangeRes"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
