@@ -15,7 +15,7 @@ Welcome to the **Ultimate Currency Converter & Exchange Rate Checker** project! 
 - **Bootstrap** 💻
 - **ExchangeRate API** 🌐
 
-Check it out live on **GitHub Pages**! 🎉 [Link to live project]  
+Check it out live on **GitHub Pages**! 🎉 https://saadmdsabah.github.io/CurrencyExchange/  
 
 Feel free to fork, clone, or contribute! 💡  
 Happy Converting! 💰
